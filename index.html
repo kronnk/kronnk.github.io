@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eni's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00ff9d;
+            --primary-light: #00ffbb;
+            --background: #001219;
+            --text: #e2e8f0;
+            --text-secondary: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            padding: 4rem 20px;
+            text-align: center;
+            background: none;
+            border-bottom: 1px solid rgba(0, 255, 157, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .role {
+            color: var(--text-secondary);
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        main {
+            padding: 3rem 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: none;
+            color: var(--text-secondary);
+            border-top: 1px solid rgba(0, 255, 157, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--text);
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Eni Sinanaj</h1>
+            <p class="role">Cloud & Data Engineer | AWS Specialist</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/eni-sinanaj-a321411b2/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/kronnk" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.upwork.com/freelancers/enis3" target="_blank" title="Upwork">
+                    <i class="fab fa-upwork"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <p>I am a Cloud Engineer and Data Engineer with expertise in building scalable AWS solutions and robust data pipelines. My passion lies in delivering Infrastructure as Code and crafting solutions that make a difference.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Eni Sinanaj</p>
+    </footer>
+</body>
+</html>
